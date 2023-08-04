@@ -9,7 +9,7 @@
   "prerelease": false,
   "changelog-host": "https://github.com",
   "packages": {
-    "charts": {
+    "helm-chart": {
       "component": "helm-chart",
       "release-type": "helm",
       "include-v-in-tag": false
