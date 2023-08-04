@@ -1,0 +1,26 @@
+# Default Values for my Helm Chart
+
+container:
+  image_front: sv301185/front-todo:v3
+  image_back: sv301185/api-todo
+  image_db: mongo
+
+app_front: frontend
+app_back: api-todo
+app_db: todo
+
+ports:
+  front_out: 8080
+  front_in: 8080
+  back_out: 30003
+  back_in: 3003
+  db_in: 27017
+
+
+spec_hpa:
+  front:
+    min: 3
+    max: 6
+  back:
+    min: 3
+    max: 6

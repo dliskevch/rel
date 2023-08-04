@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ .Values.app_back }}
+  name: {{ .Values.app_back }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.app_back }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.app_back }}
+    spec:
+      containers:
+      - name: {{ .Values.app_back }}
+        image: {{ .Values.container.image_back }}
+        ports:
+        - containerPort: {{ .Values.ports.back_in }}
+        env:
+        - name: MONGO_URL
+          valueFrom:
+              configMapKeyRef:
+                name: envmongo
+                key: mongo_url
+        - name: API_PORT
+          valueFrom:
+              configMapKeyRef:
+                name: envmongo
+                key: api_port

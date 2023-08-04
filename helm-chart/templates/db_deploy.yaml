@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.app_db }}
+  labels:
+    app: {{ .Values.app_db }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.app_db }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.app_db }}
+    spec:
+      containers:
+        - name: mongodb-container
+          image: {{ .Values.container.image_db }}
+          ports:
+            - containerPort: {{ .Values.ports.db_in }}
+          volumeMounts:
+          - name: db
+            mountPath: /data/db
+      volumes:
+        - name: db
+          persistentVolumeClaim:
+            claimName: myclaim

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: envmongo
+data:
+  mongo_url: "mongodb"
+  api_port: "3003"

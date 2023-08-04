@@ -1,0 +1,16 @@
+apiVersion: v2
+name       : Todo-HelmChart
+description: My Helm chart for Todo Project
+type       : application
+version    : 0.1.0   # This is the Helm Chart version
+appVersion : "1.2.3" # This is the version of the application being deployed
+
+keywords:
+  - nginx
+  - http
+  - mongodb
+  - DmytroLiskevych
+
+maintainers:
+  - name : Dmytro Liskevych
+    email: dliskevych@gmail.com
