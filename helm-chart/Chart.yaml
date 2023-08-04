@@ -1,9 +1,9 @@
 apiVersion: v2
-name       : Todo-HelmChart
+name: Todo-HelmChart
 description: My Helm chart for Todo Project
-type       : application
-version    : 0.1.0   # This is the Helm Chart version
-appVersion : "1.2.3" # This is the version of the application being deployed
+type: application
+version: 1.0.0 # This is the Helm Chart version
+appVersion: "1.2.3" # This is the version of the application being deployed
 
 keywords:
   - nginx
@@ -12,5 +12,5 @@ keywords:
   - DmytroLiskevych
 
 maintainers:
-  - name : Dmytro Liskevych
+  - name: Dmytro Liskevych
     email: dliskevych@gmail.com
