@@ -13,6 +13,13 @@
       "component": "helm-chart",
       "release-type": "helm",
       "include-v-in-tag": false
+      "extra-files": [
+        {
+          "type": "yaml",
+          "path": "helm-chart/Chart.yaml",
+          "jsonpath": "$.appVersion"
+        }
+      ],
     }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
