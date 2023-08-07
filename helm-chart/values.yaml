@@ -20,7 +20,7 @@ ports:
 spec_hpa:
   front:
     min: 2
-    max: 5
+    max: 6
   back:
     min: 2
-    max: 5
+    max: 6
