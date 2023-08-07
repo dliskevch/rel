@@ -12,7 +12,7 @@
     "helm-chart": {
       "component": "helm-chart",
       "release-type": "helm",
-      "include-v-in-tag": false
+      "include-v-in-tag": false,
       "extra-files": [
         {
           "type": "yaml",
