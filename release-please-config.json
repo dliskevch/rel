@@ -16,7 +16,7 @@
       "extra-files": [
         {
           "type": "yaml",
-          "path": "helm-chart/Chart.yaml",
+          "path": "Chart.yaml",
           "jsonpath": "$.appVersion"
         }
       ]
