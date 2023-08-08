@@ -9,15 +9,61 @@
   "prerelease": false,
   "changelog-host": "https://github.com",
   "packages": {
-    "helm-chart": {
-      "component": "helm-chart",
-      "release-type": "helm",
-      "include-v-in-tag": false,
+    ".": {
+      "release-type": "simple",
       "extra-files": [
         {
           "type": "yaml",
           "path": "Chart.yaml",
           "jsonpath": "$.appVersion"
+        }
+      ],
+      "changelog-sections": [
+        {
+          "type": "feat",
+          "section": "Features"
+        },
+        {
+          "type": "fix",
+          "section": "Fixes"
+        },
+        {
+          "type": "chore",
+          "hidden": true,
+          "section": "Other"
+        },
+        {
+          "type": "docs",
+          "section": "Docs"
+        },
+        {
+          "type": "refactor",
+          "section": "Refactoring"
+        },
+        {
+          "type": "build",
+          "hidden": true,
+          "section": "Build"
+        },
+        {
+          "type": "ci",
+          "hidden": true,
+          "section": "CI"
+        },
+        {
+          "type": "revert",
+          "hidden": true,
+          "section": "Reverts"
+        },
+        {
+          "type": "style",
+          "hidden": true,
+          "section": "Styling"
+        },
+        {
+          "type": "test",
+          "hidden": true,
+          "section": "Tests"
         }
       ]
     }
