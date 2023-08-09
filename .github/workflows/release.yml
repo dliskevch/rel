@@ -6,6 +6,9 @@ name: Run Release Please
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    outputs: 
+      TAG: ${{ steps.releaser.outputs.tag_name }}
+      ots: ${{ steps.releaser.outputs.[*] }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -13,7 +16,7 @@ jobs:
           command: manifest
       - run: echo "A release was created."
         if: ${{ steps.release.outputs.releases_created }}
-      - run: echo "${{ steps.release.outputs.* }}"
+      - run: echo "${{ steps.release.outputs.tag_name }}"
         if: ${{ steps.release.outputs.releases_created }}
       # For root level packages: ${{ steps.release.outputs.package-a--tag_name }}
       - run: echo "Release ${{ steps.release.outputs['packages/package-a--tag_name'] }} created for package-a."
