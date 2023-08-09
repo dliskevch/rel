@@ -13,6 +13,7 @@ jobs:
         id: release
         with:
           command: manifest
+      - run: echo "${{ steps.release.outputs.helm-chart--version }}"
       - run: echo "A release was created."
         if: ${{ steps.release.outputs.releases_created }}
       - run: echo "${{ steps.release.outputs.tag_name }}"
