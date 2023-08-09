@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/dliskevch/rel/compare/ASA/v1.2.0...ASA/v1.2.1) (2023-08-09)
+
+
+### Miscellaneous Chores
+
+* **ASA:** Synchronize cl mg versions
+
 ## [1.2.0](https://github.com/dliskevch/rel/compare/ASA/v1.1.3...ASA/v1.2.0) (2023-08-09)
 
 
