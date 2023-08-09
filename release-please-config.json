@@ -33,7 +33,7 @@
     },
     {
       "type": "linked-versions",
-      "groupName": "cm",
+      "groupName": "cl mg",
       "components": [
         "helm-chart", "ASA"
       ]
