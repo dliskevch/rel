@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/dliskevch/rel/compare/helm-chart/1.2.4...helm-chart/1.2.5) (2023-08-09)
+
+
+### Bug Fixes
+
+* Update values.yaml ([1c98ba6](https://github.com/dliskevch/rel/commit/1c98ba6fd0e9af1664db5aa3e906b45aa5c4f055))
+
 ## [1.2.4](https://github.com/dliskevch/rel/compare/helm-chart/1.2.3...helm-chart/1.2.4) (2023-08-09)
 
 
