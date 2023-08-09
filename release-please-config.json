@@ -1,6 +1,6 @@
 {
   "commit-search-depth": 20,
-  "include-v-in-tag": true,
+  "include-v-in-tag": false,
   "include-component-in-tag": true,
   "tag-separator": "/",
   "bump-minor-pre-major": false,
@@ -13,7 +13,6 @@
     "helm-chart": {
       "component": "helm-chart",
       "release-type": "helm",
-      "include-v-in-tag": false,
       "extra-files": [
         {
           "type": "yaml",
