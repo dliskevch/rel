@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     outputs: 
       TAG: ${{ steps.release.outputs.tag_name }}
-      ots: ${{ steps.release.outputs.* }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
