@@ -20,3 +20,8 @@ jobs:
       # For root level packages: ${{ steps.release.outputs.package-a--tag_name }}
       - run: echo "Release ${{ steps.release.outputs['packages/package-a--tag_name'] }} created for package-a."
         if: ${{ steps.release.outputs['packages/package-a--release_created'] }}
+      - name: print release info
+        run: |
+          echo "release(s) have been generated"
+          array= "${{ steps.release.outputs[*] }}"
+          echo ${array[@]}
