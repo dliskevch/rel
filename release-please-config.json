@@ -8,7 +8,6 @@
   "draft": false,
   "prerelease": false,
   "changelog-host": "https://github.com",
-  "release-type": "go",
   "packages": {
     "helm-chart": {
       "component": "helm-chart",
