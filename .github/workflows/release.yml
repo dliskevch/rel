@@ -23,5 +23,6 @@ jobs:
       - name: print release info
         run: |
           echo "release(s) have been generated"
+          echo "${{ steps.release.outputs[@] }}"
           array= "${{ steps.release.outputs[*] }}"
           echo ${array[@]}
