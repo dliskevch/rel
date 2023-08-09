@@ -24,5 +24,6 @@ jobs:
         run: |
           echo "release(s) have been generated"
           echo "${{ steps.release.outputs[*] }}"
-          export array = "${{ steps.release.outputs[*] }}"
+          export array "${{ steps.release.outputs[*] }}"
+          env
           echo ${array[@]}
