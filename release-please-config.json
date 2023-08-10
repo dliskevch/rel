@@ -27,10 +27,6 @@
   },
   "plugins": [
     {
-      "type": "workspace",
-      "merge": false
-    },
-    {
       "type": "linked-versions",
       "groupName": "cl mg",
       "components": [
