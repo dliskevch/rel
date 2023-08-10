@@ -27,7 +27,7 @@
   },
   "plugins": [
     {
-      "type": "cargo-workspace",
+      "type": "workspace",
       "merge": false
     },
     {
