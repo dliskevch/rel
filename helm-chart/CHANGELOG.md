@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/dliskevch/rel/compare/helm-chart/1.2.7...helm-chart/1.3.0) (2023-08-10)
+
+
+### Miscellaneous Chores
+
+* **helm-chart:** Synchronize cl mg versions
+
 ## [1.2.7](https://github.com/dliskevch/rel/compare/helm-chart/1.2.6...helm-chart/1.2.7) (2023-08-09)
 
 
