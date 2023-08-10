@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/dliskevch/rel/compare/ASA/1.2.7...ASA/1.3.0) (2023-08-10)
+
+
+### Features
+
+* Update main.tf ([89ec99a](https://github.com/dliskevch/rel/commit/89ec99aff2e353fc816e6603e77f6f0336825c64))
+
 ## [1.2.7](https://github.com/dliskevch/rel/compare/ASA/1.2.6...ASA/1.2.7) (2023-08-09)
 
 
