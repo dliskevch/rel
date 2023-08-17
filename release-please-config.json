@@ -13,13 +13,6 @@
     "helm-chart": {
       "component": "helm-chart",
       "release-type": "helm",
-//      "extra-files": [
-//       {
-//          "type": "yaml",
-//          "path": "Chart.yaml",
-//          "jsonpath": "$.appVersion"
-//        }
-//      ]
     },
     "ASA": {
       "component": "ASA"
