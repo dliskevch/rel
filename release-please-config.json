@@ -12,7 +12,7 @@
   "packages": {
     "helm-chart": {
       "component": "helm-chart",
-      "release-type": "helm",
+      "release-type": "helm"
     },
     "ASA": {
       "component": "ASA"
