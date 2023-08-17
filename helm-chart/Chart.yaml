@@ -2,7 +2,7 @@ apiVersion: v2
 name: Todo-HelmChart
 description: My Helm chart for Todo Project
 type: applications
-version: 0.2.0
+version: 0.5.0
 # dddddd123
 appVersion: 1.3.0
 keywords:
