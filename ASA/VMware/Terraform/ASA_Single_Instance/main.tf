@@ -6,6 +6,7 @@ terraform {
   }
 }
 
+
 provider "vsphere" {
   user                 = var.userid
   password             = var.password
