@@ -1,6 +1,6 @@
 {
   "commit-search-depth": 20,
-  "include-v-in-tag": false,
+  "include-v-in-tag": true,
   "include-component-in-tag": true,
   "tag-separator": "/",
   "bump-minor-pre-major": false,
@@ -12,10 +12,21 @@
   "packages": {
     "helm-chart": {
       "component": "helm-chart",
-      "release-type": "helm"
+      "release-type": "helm",
+      "include-v-in-tag": false,
+      "extra-files": [
+        {
+          "type": "yaml",
+          "path": "Chart.yaml",
+          "jsonpath": "$.appVersion"
+        }
+      ]
     },
     "ASA": {
       "component": "ASA"
+    },
+    "ASA/AWS": {
+      "component": "ASA/AWS"
     }
   },
   "plugins": [
@@ -23,7 +34,7 @@
       "type": "linked-versions",
       "groupName": "cl mg",
       "components": [
-        "helm-chart", "ASA"
+        "helm-chart", "ASA", "ASA/AWS"
       ]
     }
   ],
