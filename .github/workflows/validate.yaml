@@ -1,0 +1,37 @@
+name: validate
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+      - edited  # do not remove, this executes when someone fixes the PR title
+    branches:
+      - master
+
+jobs:
+  validate:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: generic
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yaml
+
+      - name: Validate PR title prefix
+        run: |
+          title="${{ github.event.pull_request.title }}"
+          echo "validating PR title: $title"
+          regex="^(fix|feat|chore|refactor|build|ci|docs|revert|style|test)(\([a-zA-Z0-9-]+\))?(!)?: .+"
+          if [[ ! $title =~ $regex ]]; then
+            echo "::error title=Pull request title does not have the required prefix::Please refer to the [CONTRIBUTING doc](https://pages.github.office.opendns.com/nebula/sfcn/CONTRIBUTING.html#commit-types)"
+            exit 1
+          fi
