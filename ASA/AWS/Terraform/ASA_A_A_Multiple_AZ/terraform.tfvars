@@ -1,6 +1,10 @@
 // AWS Environment -- Remove the # to before configure a value to it. 
 // If you dont provide any value, it will take the default value 
 
+
+
+
+
 ############################################################
 #AWS Creditials to access the AWS Cloud
 #############################################################
