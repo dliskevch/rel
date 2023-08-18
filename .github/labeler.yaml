@@ -1,0 +1,9 @@
+ASA:
+  - "ASA/**"
+  - "!ASA/AWS/**"
+
+ASA/AWS:
+  - "ASA/AWS/**"
+
+helm-chart:
+  - "helm-chart/**"
