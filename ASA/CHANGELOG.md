@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/dliskevch/rel/compare/ASA/v0.6.1...ASA/v0.6.2) (2023-08-18)
+
+
+### Bug Fixes
+
+* delete ([6247960](https://github.com/dliskevch/rel/commit/624796071549c85afba34b1e4b8647260b2bf014))
+
 ## [0.6.1](https://github.com/dliskevch/rel/compare/ASA/0.6.0...ASA/v0.6.1) (2023-08-18)
 
 
