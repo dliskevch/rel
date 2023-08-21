@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.5](https://github.com/dliskevch/rel/compare/helm-chart/0.6.4...helm-chart/0.6.5) (2023-08-21)
+
+
+### Bug Fixes
+
+* add Test ([#36](https://github.com/dliskevch/rel/issues/36)) ([45d7b05](https://github.com/dliskevch/rel/commit/45d7b057dcc0d55455f0f30a7d1c1656225173ec))
+
 ## [0.6.4](https://github.com/dliskevch/rel/compare/helm-chart/0.6.3...helm-chart/0.6.4) (2023-08-21)
 
 
