@@ -2,8 +2,8 @@ apiVersion: v2
 name: Todo-HelmChart
 description: My Helm chart for Todo Project
 type: applications
-version: 0.6.3
-appVersion: 0.6.3
+version: 0.6.4
+appVersion: 0.6.4
 keywords:
   - nginx
   - http

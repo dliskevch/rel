@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/dliskevch/rel/compare/ASA/AWS/v0.6.3...ASA/AWS/v0.6.4) (2023-08-21)
+
+
+### Bug Fixes
+
+* Update README.md ([3334fc2](https://github.com/dliskevch/rel/commit/3334fc2d7118644327161adb5012455a955edfa3))
+
 ## [0.6.3](https://github.com/dliskevch/rel/compare/ASA/AWS/v0.6.2...ASA/AWS/v0.6.3) (2023-08-18)
 
 
