@@ -5,6 +5,7 @@
   "tag-separator": "/",
   "bump-minor-pre-major": false,
   "bump-patch-for-minor-pre-major": false,
+  "pull-request-title-pattern": "chore: release${component} ${version}",
   "draft": false,
   "prerelease": false,
   "changelog-host": "https://github.com",
