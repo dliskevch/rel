@@ -2,6 +2,9 @@
 #Output
 ##################################################################################################################################
 
+
+
+
 output "ASAv_Instance_Public_IPs" {
   value = azurerm_public_ip.asav-mgmt-interface[*].ip_address
 }
