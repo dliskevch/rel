@@ -28,3 +28,9 @@ jobs:
           echo "${{ steps.release.outputs[*] }}"
           export array "${{ steps.release.outputs[*] }}"
           echo ${array[@]}
+
+      - name: Helm build Charts
+        env:
+          HELM_TAG: 1.0.0-PR-${{ github.event.pull_request.number }}
+        run: |
+          echo "helm package ./chart -d ./chart/out --version ${{ HELM_TAG }} --app-version ${{ HELM_TAG }}"
