@@ -1,0 +1,17 @@
+name: PR
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Helm build Charts
+        env:
+          HELM_TAG: 1.0.0-PR-${{ github.event.pull_request.number }}
+        run: |
+          echo "helm package ./chart -d ./chart/out --version $HELM_TAG --app-version $HELM_TAG"
