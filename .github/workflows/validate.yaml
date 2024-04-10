@@ -35,3 +35,17 @@ jobs:
             echo "::error title=Pull request title does not have the required prefix::Please refer to the [CONTRIBUTING doc](https://pages.github.office.opendns.com/nebula/sfcn/CONTRIBUTING.html#commit-types)"
             exit 1
           fi
+  retry:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false # Setting this to false ensures that all attempts run even if one fails
+      max-attempts: 3 # Specify the number of times to retry the job if it fails
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run a command
+        run: |
+          echo "settt"
+          slep 30
+          echo "SSsettt"
